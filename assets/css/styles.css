@@ -1,81 +1,22 @@
-.button-right{
-    float: right;
+.nav-search{
+    margin-top: 7px;
 }
 
-.sidebar_active{
-    background-color: #eeeeee;
+.navbar-default .navbar-nav > .open > a{
+    background-color: transparent !important;
 }
 
-.btn_upload_pic{
-    background-color: #2C3E50 !important;
+.dropdown-menu {
+    background-color: #42586E !important;
 }
-
-.btn_upload_pic:hover{
+.dropdown-menu > li > a {
     color: white !important;
-    border-color: yellow !important;
-}
-.modal{
-    margin-top: 2%;
-}
-
-.deletePic{
-    margin-bottom: 5px;
-    float: right;
-}
-
-.modal-header, .modal-footer{
-    background-color: #2C3E50;
-    color: white;
-    border: none;
-}
-
-.modal-body{
-    background-color: #18BC9C;
-    border-color: #2C3E50;
-    color: white;
-}
-
-button.close{
-    color: white;
-    opacity: 1;
-}
-
-.modal-body a{
-    color: yellow;
-}
-
-.login-input{
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
-.modal-body a:hover{
-    color: yellow;
-}
-
-label.error{
-    color: yellow;
-}
-
-.star_req{
-    color: orangered;
-}
-
-.dropzone {
-    border: 2px dashed #0087F7 !important;
-    border-radius: 5px !important;
-}
-
-.processed_img{
-    padding: 30px;
-}
-
-.fb_login{
-    width: 100px;
-    margin-bottom: 0px;
-}
-
-.share_pic:hover{
-    color: #18BC9C !important;
+.dropdown-menu > li > a:hover {
+    color: #18bc9c !important;
+    background-color: transparent !important;
 }

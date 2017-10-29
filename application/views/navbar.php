@@ -16,14 +16,23 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="">Portfolio</a>
+                <li class="nav-item nav-search">
+                    <input type = "text" class = "form-control nav-link" placeholder = "Find a product...">
+                </li>
+                <li class="nav-item dropdown" >
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">Games  <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?php echo base_url() ?>/products/category/1">Card</a></li>
+                        <li><a href="#">Role-playing</a></li>
+                        <li><a href="#">Strategy</a></li>
+                        <li><a href="#">Party</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="">About</a>
+                    <a class="nav-link" href="">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="">Contact</a>
+                    <a class="nav-link" href="">Contact</a>
                 </li>
             </ul>
         </div>

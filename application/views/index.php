@@ -2,9 +2,9 @@
 <header class="masthead">
     <div class="container">
         <div class="intro-text">
-            <span class="name">Start Bootstrap</span>
+            <span class="name">Board games</span>
             <hr class="star-light">
-            <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+            <span class="skills">The coolest place to buy your games online!</span>
         </div>
     </div>
 </header>
@@ -17,13 +17,16 @@
         <hr class="star-light">
         <div class="row">
             <div class="col-lg-4 ml-auto">
-                <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.                </p>
             </div>
             <div class="col-lg-4 mr-auto">
-                <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.                </p>
             </div>
             <div class="col-lg-4 mr-auto">
-            <p> Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.                </p>
             </div>
         </div>
     </div>
