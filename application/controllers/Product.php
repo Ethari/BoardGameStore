@@ -3,16 +3,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Product extends CI_Controller {
 
-	public function index()
-	{
+    public function __construct(){
+        parent::__construct();
         $this->load->model('admin_loader');
-        $page = 'index';
-        $this->admin_loader->generatePage($page);
+        $this->load->model('Products_Model');
+    }
+	public function view($product_id){
+        $page = 'product';
+        $product = $this->Products_Model->getProductInfo($product_id);
 
-	}
+        $params = array(
+            'product' => $product
+        );
 
-	public function category($id){
+        ChromePhp::log($params);
 
+        $this->admin_loader->generatePage($page, $params);
     }
 
 }

@@ -24,6 +24,13 @@ class Products_Model extends CI_Model {
         return $query->result_array()[0];
     }
 
+    public function getProductInfo($product_id){
+        $sql = "SELECT * FROM product WHERE ID = " . $product_id;
+        $query = $this->db->query($sql);
+
+        return $query->result_array()[0];
+    }
+
     public function getAllStudents(){
         $sql = "SELECT * FROM student;";
         $query = $this->db->query($sql);
