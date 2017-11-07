@@ -16,12 +16,13 @@ $this->load->helper('url');
     <title>BoardGameShop</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?php echo base_url("/assets/css/bootstrap.css"); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("/assets/css/bootstrap.min.css"); ?>" rel="stylesheet">
     <link href="<?php echo base_url("/assets/css/styles.css"); ?>" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="<?php echo base_url("/assets/css/freelancer.min.css"); ?>" rel="stylesheet">
     <link href="<?php echo base_url("/assets/css/jquery_validation.css"); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("/assets/css/shop-homepage.css"); ?>" rel="stylesheet">
+    <link href="<?php echo base_url("/assets/css/3-col-portfolio.css"); ?>" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="<?php echo base_url("/assets/font-awesome/css/font-awesome.css"); ?>" rel="stylesheet" type="text/css">
@@ -35,5 +36,3 @@ $this->load->helper('url');
 </head>
 
 <body id="page-top" class="index">
-
-<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>

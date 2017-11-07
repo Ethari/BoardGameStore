@@ -12,9 +12,21 @@ class Admin_loader extends CI_Model {
         );
 
         $this->load->view('header');
-        $this->load->view('navbar', $data = array('page' => $page));
-
+        $this->load->view('navbar', $data = array(
+                                                'page' => $page,
+                                                'categories' => $this->loadCategories())
+                                            );
         $this->load->view($page, $args);
         $this->load->view('footer');
+    }
+
+    public function loadCategories(){
+        $sql = "SELECT * FROM category
+                ORDER BY Name ASC;";
+        $query = $this->db->query($sql);
+
+        $categories = $query->result_array();
+        ChromePhp::log($categories);
+        return $categories;
     }
 }

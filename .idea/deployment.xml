@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="telia_maps">
+    <serverData>
+      <paths name="telia_maps">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="BoardGameStore" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

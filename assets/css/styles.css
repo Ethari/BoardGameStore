@@ -1,22 +1,17 @@
-.nav-search{
-    margin-top: 7px;
-}
-
-.navbar-default .navbar-nav > .open > a{
-    background-color: transparent !important;
-}
-
 .dropdown-menu {
-    background-color: #42586E !important;
+    background-color: #343a40 !important;
 }
 .dropdown-menu > li > a {
     color: white !important;
-    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
+    margin-left:8px;
 }
 
-.dropdown-menu > li > a:hover {
-    color: #18bc9c !important;
-    background-color: transparent !important;
+.category_info{
+    color: dimgrey;
+    margin-bottom: 50px;
+}
+
+.card-body{
+    max-height: 200px;
+    overflow: auto;
 }
