@@ -26,8 +26,6 @@ $this->load->helper('url');
 
     <!-- Custom Fonts -->
     <link href="<?php echo base_url("/assets/font-awesome/css/font-awesome.css"); ?>" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <script type = "text/javascript">
         var BASE_URL = "<?php echo base_url();?>";
@@ -36,3 +34,11 @@ $this->load->helper('url');
 </head>
 
 <body id="page-top" class="index">
+
+<script type="text/javascript" src="<?php echo base_url("/assets/js/jquery.min.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("/assets/js/bootstrap.bundle.min.js"); ?>"></script>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+<!-- Contact Form JavaScript -->
+<script src="<?php echo base_url("/assets/js/jquery_validation.js"); ?>"></script>

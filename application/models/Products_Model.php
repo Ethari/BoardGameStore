@@ -38,6 +38,24 @@ class Products_Model extends CI_Model {
         return $query->result_array();
     }
 
+    public function getProductComments($product_id){
+        $sql = "SELECT * FROM product_comments pc 
+                WHERE pc.product_ID = " . $product_id
+                . " ORDER BY pc.comment_date DESC";
+        $query = $this->db->query($sql);
+
+        return $query->result_array();
+    }
+
+    public function insertComment($params){
+        $data = array(
+            'product_ID' => $params['product_id'],
+            'comment_text' => $params['review_text'],
+            'comment_date' => date('Y-m-d H:i')
+        );
+        $this->db->insert('product_comments', $data);
+    }
+
     public function studentExists($studentIndex){
         $this->db->where('studentIndex', $studentIndex);
         $query = $this->db->get('student');
