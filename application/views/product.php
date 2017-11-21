@@ -17,7 +17,7 @@
                 <div class="card-header">
                     Product Reviews
                 </div>
-                <div class="card-body">
+                <div class="card-body" style = "max-height: 300px; overflow: auto;">
                     <?php
                         foreach($comments as $comment){
                             echo '<p>'.$comment['comment_text'].'</p>
@@ -26,7 +26,9 @@
                         }
 
                     ?>
-                    <button class="btn btn-success" data-toggle="modal" data-target="#review_modal">Leave a Review</button>
+                </div>
+                <div class = "card-footer">
+                    <button class="btn btn-success" style = "float: right;" data-toggle="modal" data-target="#review_modal">Leave a Review</button>
                 </div>
             </div>
             <!-- /.card -->
