@@ -6,6 +6,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown search_bar">
+                    <input type = "text" class = "search-dropdown-toggle form-control" placeholder = "Search...">
+                    <ul class="dropdown-menu white search_results">
+                    </ul>
+                </li>
                 <li class="nav-item dropdown" >
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown">Games  <span class="caret"></span></a>
                     <ul class="dropdown-menu">

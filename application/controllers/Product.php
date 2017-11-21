@@ -30,4 +30,10 @@ class Product extends CI_Controller {
 	    header("Location: " . base_url('/product/view/'.$params['product_id']));
     }
 
+    public function getProductsLike(){
+        $phrase = $_POST['phrase'];
+        $products = $this->Products_Model->getProductsLike($phrase);
+        echo json_encode($products);
+    }
+
 }

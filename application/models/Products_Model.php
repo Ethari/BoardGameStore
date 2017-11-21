@@ -73,6 +73,16 @@ class Products_Model extends CI_Model {
         return $id;
     }
 
+    public function getProductsLike($phrase){
+        $sql = "SELECT p.*, c.Name as 'category_name' FROM product p 
+                JOIN category c ON c.ID = p.Category_ID 
+                WHERE (p.Name COLLATE UTF8_GENERAL_CI LIKE '%".$phrase."%' OR c.Name COLLATE UTF8_GENERAL_CI LIKE '%".$phrase."%')
+                ORDER BY p.Name ASC";
+        $query = $this->db->query($sql);
+        return($query->result_array());
+    }
+
+
     public function deleteStudent($id){
         $this->db->where('id', $id);
         $this->db->delete('student');
