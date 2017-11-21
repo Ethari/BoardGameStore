@@ -31,8 +31,8 @@ class PayPal extends CI_Model {
         $transaction->setAmount($amount);
 
         $redirectUrls = new \PayPal\Api\RedirectUrls();
-        $redirectUrls->setReturnUrl("http://localhost/BoardGameStore/Payment/endPayment")
-            ->setCancelUrl("http://localhost/BoardGameStore/Payment/endPayment");
+        $redirectUrls->setReturnUrl(base_url("Payment/endPayment"))
+            ->setCancelUrl(base_url("Payment/endPayment"));
 
         $payment = new \PayPal\Api\Payment();
         $payment->setIntent('sale')
