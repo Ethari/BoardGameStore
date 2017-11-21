@@ -1,8 +1,6 @@
 //Javascript here
 $(function() {
     $("#purchase_paypal").click(function(){
-        $(".payment_content").hide();
-        $(".loader_container").show();
         $("#shipping_info").submit();
     });
 
@@ -36,11 +34,17 @@ $(function() {
             address: "Address is required",
             city: "City is required",
             zip: "Zip code is required",
-            email: "Email is required"
+            email: {
+                required: "Email is required",
+                email: "Invalid email address"
+            }
         },
 
         submitHandler: function () {
             var form_data = $('#shipping_info').serialize();
+
+            $(".payment_content").hide();
+            $(".loader_container").show();
 
             var request = $.ajax({
                 method: "POST",

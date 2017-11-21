@@ -17,16 +17,21 @@
                 <div class="card-header">
                     Product Reviews
                 </div>
-                <div class="card-body">
+                <div class="card-body" style = "max-height: 300px; overflow: auto;">
                     <?php
-                        foreach($comments as $comment){
-                            echo '<p>'.$comment['comment_text'].'</p>
+                        if(empty($comments)){
+                            echo "<p>This product does not have any reviews yet.</p>";
+                        } else{
+                            foreach($comments as $comment){
+                                echo '<p>'.$comment['comment_text'].'</p>
                                   <small class="text-muted">Posted by Anonymous on '.$comment['comment_date'].'</small>
                                   <hr>';
+                            }
                         }
-
                     ?>
-                    <button class="btn btn-success" data-toggle="modal" data-target="#review_modal">Leave a Review</button>
+                </div>
+                <div class = "card-footer">
+                    <button class="btn btn-success" style = "float: right;" data-toggle="modal" data-target="#review_modal">Leave a Review</button>
                 </div>
             </div>
             <!-- /.card -->
